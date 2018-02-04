@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Library Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:medium" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <h1>Library.</h1>
+            <ul>
+                <li>
+                    <a href="index.html" style="padding-right:58px;" onclick="select('book');" class="f1">Books</a>
+                    <span class="focus-border6" style="margin-left: 16px;display: block;margin-top: 10px; width: 0;" id="focus-1"></span>
+                </li>
+                <li>
+                    <a href="author-main.html" onclick="select('author');">Authors</a>
+                    <span class="focus-border6" style="margin-left: 21px; display: block; margin-top: 10px; width: 0;" id="focus-2"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="details" class="details">
+        <div class="books" id="books" style="height: 1024px;">
+            <p style="font-family: 'Roboto';font-size: 12px;display: inline-block;padding-top: 38px;padding-left: 43px;padding-bottom: 30px;font-weight: 500;color: #777982;">
+                <a href="index.html" id="back" style="color: #6379f6;">BOOKS &nbsp;</a>/&nbsp; Details</p>
+            <div class="list" id="list" style="height: 581px; ">
+                <div>
+                    <img src="icons\book_icon.svg" style="padding-left: 20px;padding-top: 26px;padding-right: 16px;float: left;">
+                </div>
+                <div>
+                    <span style="padding-top: 26px;width: 420px;height: 18px;font-family: 'Roboto';font-size: 15px;float: left;color: #47494f;font-weight: 500;">
+                        Androids Dream of Electric Sheep?</span>
+                    <span style="padding-top: 26px;font-family: 'Roboto';font-size: 13px;color: #9095aa;height: 15px;display: inline-block;padding-left: 305px;">ISBN -</span>
+                    <span style="float: right;display: inline-block;padding-top: 26px;font-family: 'Roboto';font-size: 13px;color: #777982;padding-right: 20px;">
+                        9348-8459-287-74</span>
+                </div>
+                <div style="width: 97px;height: 15px;position: absolute;left: 120px;font-family: 'Roboto';font-size: 13px;">
+                    <p style="margin-top: 8px;float: left;margin-bottom: 0;color: #777982;">by </p>
+                    <p style="margin-top: 8px;margin-bottom: 0;margin-left: 15px;color: #47494f;font-weight: 500;">Philip K. Dick</p>
+                </div>
+                <div style="margin-top: 18px;margin-right: 80px;font-family: 'Roboto';font-size: 12px;color: #9095aa;position: absolute;margin-left: 76px; line-height: 18px;">
+                    <p style="width: 725px;display: inline-block; margin-top:16px;">
+                        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque
+                        ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo
+                        enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+                        dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia
+                        dolor sit amet, consectetur.
+                        <br>
+                        <br> Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                        voluptas nulla pariatur.
+                        <br>
+                        <br> Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium,
+                        totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta
+                        sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia
+                        consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui
+                        dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                        incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                        exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis
+                        autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
+                        vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.
+                        <br>
+                        <br> Consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est,
+                        qui dolorem ipsum quia dolor sit amet, consectetur.
+                        <br>
+                        <br> Adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam
+                        quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit
+                        laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui
+                        in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo
+                        voluptas nulla pariatur.
+                        <br>
+                        <br>
+                    </p>
+
+                </div>
+            </div>
+        </div>
+        <div>
+            <img src="icons\prev_icon.svg" style="margin-top: 110px;padding-left: 41px;padding-right: 40px;padding-top: 18px;padding-bottom: 18px;background-color: white;position: absolute;left: 81%;border: 1px solid #e5e6ed;">
+            <img src="icons\next_icon.svg" style="margin-top: 110px;padding-left: 41px;padding-right: 40px;padding-top: 18px;padding-bottom: 18px;background-color: white;position: absolute;left: 88.1%;border: 1px solid #e5e6ed;">
+        </div>
+    </div>
+</body>

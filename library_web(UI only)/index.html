@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Library Web</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:medium" rel="stylesheet">
+    <script src="main.js"></script>
+</head>
+
+<body>
+    <div>
+        <nav>
+            <h1>Library.</h1>
+            <ul>
+                <li>
+                    <a href="#div2" style="padding-right:58px;" onclick="select('book');" class="f1">Books</a>
+                    <span class="focus-border6" style="margin-left: 16px;display: block;margin-top: 10px;" id="focus-1"></span>
+                </li>
+                <li>
+                    <a href="author-main.html" onclick="select('author');">Authors</a>
+                    <span class="focus-border6" style="margin-left: 21px; display: block; margin-top: 10px; width: 0;" id="focus-2"></span>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <div id="div2" class="div">
+        <div href="#" class="books" id="books">
+            <p style="font-family: 'Roboto';font-size: 12px;display: inline-block;padding-top: 38px;padding-left: 43px;padding-bottom: 30px;font-weight: 500;color: #777982;">BOOKS</p>
+            <p style="display: inline-block;float: right;padding-top: 38px;font-size: 12px;font-family: 'Roboto';padding-bottom: 30px;color: #9095aa;">24 BOOKS</p>
+            <div class="list" id="list" style="cursor: pointer;">
+                <div>
+                    <img src="icons\book_icon.svg" style="padding-left: 20px;padding-top: 20px;padding-right: 16px;float: left;">
+                </div>
+                <div>
+                    <a href="book-details.html" style="padding-top: 16px;width: 420px;height: 18px;font-family: 'Roboto';font-size: 15px;float: left;color: #47494f;font-weight: 500;">
+                        Androids Dream of Electric Sheep?</a>
+                    <span style="padding-top: 16px;font-family: 'Roboto';font-size: 13px;color: #9095aa;height: 15px;display: inline-block;padding-left: 320px;">ISBN -</span>
+                    <span style="float: right;display: inline-block;padding-top: 16px;font-family: 'Roboto';font-size: 13px;color: #777982;padding-right: 20px;">
+                        9348-8459-287-74</span>
+                </div>
+                <div style="width: 97px;height: 15px;position: absolute;left: 120px;font-family: 'Roboto';font-size: 13px;">
+                    <p style="margin-top: 8px;float: left;margin-bottom: 0;color: #777982;">by </p>
+                    <p style="margin-top: 8px;margin-bottom: 0;margin-left: 15px;color: #47494f;font-weight: 500;">Philip K. Dick</p>
+                </div>
+                <div style="margin-top: 18px;margin-right: 80px;font-family: 'Roboto';font-size: 12px;color: #9095aa;position: absolute;margin-left: 76px;">
+                    <p style="width: 725px;height: 18px;overflow: hidden;display: inline-block;">It was January 2021, and Rick Deckard Lorem ipsum dolor sit amet, consectetur adipiscing elit Sed ut
+                        perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam
+                        rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt
+                        explicabo. Nemo enim ipsam voluptatem
+
+                    </p>
+                    <p style="display: inline-block;float: right;">...
+                        <a href="book-details.html" style="color: #6379f6;text-decoration: none;margin-top: 12px;" >More</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="button" id="b">
+            <button type="button" class="b-but" id="mybtn" onclick="f()">Add Book</button>
+            <div id="Modal" class="modal">
+
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <span class="close">&times;</span>
+                    <p style="font-family: 'Roboto';font-size: 15px;font-weight: 500;color: #47494f;margin-left: 31px;margin-top: 30px;">ADD BOOK</p>
+                    <form action="#">
+
+                        <input type="text" placeholder="" id="bname" name="bname" class="bname">
+                        <label class="book">Book Name</label>
+                        <span class="focus-border"></span>
+                        <select name="author" class="sauthor" required>
+                            <option value="" disabled selected hidden>Select Author</option>
+                            <option value="saab">Saab</option>
+                            <option value="fiat">Fiat</option>
+                            <option value="audi">Audi</option>
+                        </select>
+                        <input type="text" name="isbn" id="isbn" class="isbn" placeholder="">
+                        <label class="is">ISBN Number</label>
+                        <span class="focus-border2"></span>
+                        <br>
+                        <span style="color: #AFAFAF;font-size: 16px;">Description of content</span>
+                        <textarea name="description" rows="5" cols="7" class="txt"></textarea>
+                        <span class="focus-border3"></span>
+                        <span style="font-size: 11px;color: #AFAFAF;">Maximum characters 300</span>
+                        <br>
+                        <button class="cancel" id="cancel">Cancel</button>
+                        <button type="submit" value="submit" class="submit">Save Book</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    
+    
+    
+</body>
+
+</html>
